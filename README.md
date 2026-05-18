@@ -1,6 +1,24 @@
 # AI Creative Assistant
 
+A modular AI system prototype designed for structured creative generation and future LLM integration.
+
+> CLI-based AI workflow prototype for structured creative generation
+
 A Python-based learning project evolving toward an AI application development workflow, integrating structured data handling, CLI interaction, and foundations for LLM-powered tools.
+
+---
+
+## 🛠 Tech Stack
+
+Python · CLI · Data Structures · (Future: OpenAI API · RAG · Streamlit)
+
+---
+
+## 📊 Project Status
+
+🟢 Phase 1: CLI prototype (completed)  
+🟡 Phase 2: LLM integration (in progress)  
+⚪ Phase 3: RAG + UI system (planned)
 
 ---
 
@@ -14,6 +32,19 @@ This project explores how basic Python programming can be structured into an AI 
 * Data processing pipelines
 
 ---
+
+## 🧪 What This Tool Does (Core Workflow)
+
+This CLI-based tool simulates a minimal AI generation pipeline:
+
+1. User inputs structured data (text / metadata)
+2. System processes and organizes input
+3. Output is formatted as structured response
+4. Future versions will connect to LLMs for generation
+
+
+---
+
 
 ## 🧠 Core Concept
 
@@ -65,6 +96,18 @@ for key, value in person.items():
 ```bash
 python main.py
 ```
+## 📤 Example Interaction
+
+```text
+[INPUT]
+name: Alice  
+age: 25  
+
+[OUTPUT]
+Hello Alice, you are 25 years old.
+
+System processed structured input and generated formatted output successfully.
+
 
 ---
 
@@ -123,6 +166,8 @@ To evolve this repository into a minimal but functional AI application framework
 * Processing user inputs via LLM APIs
 * Serving as a lightweight AI assistant prototype
 
+This project will evolve into a modular AI creative assistant for generating structured artistic and curatorial content.
+
 ---
 
 ## 🧭 Development Philosophy
@@ -130,3 +175,5 @@ To evolve this repository into a minimal but functional AI application framework
 This project follows a progressive learning approach:
 
 > From simple Python scripts → to structured AI workflows → to usable AI applications
+
+This project demonstrates the ability to translate simple logic into AI system design thinking.
