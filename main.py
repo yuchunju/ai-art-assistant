@@ -1,14 +1,13 @@
-print("hello world")
+from src.utils import greet_user
+from src.utils import average
+from src.utils import is_palindrome
 
+# 测试函数
+print(average([1, 2, 3, 4]))
+print(is_palindrome("level"))
+
+# 用户输入
 name = input("name: ")
 age = input("age: ")
-print(f"Hello {name}, you are {age}")
 
-foods = ["pizza", "tea", "rice"]
-for food in foods:
-    print(food)
-
-person = {"name": "Alice", "age": 25}
-for key, value in person.items():
-    print(f"{key}: {value}")
-    
+print(greet_user(name, age))

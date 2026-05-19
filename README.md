@@ -17,8 +17,10 @@ Python · CLI · Data Structures · (Future: OpenAI API · RAG · Streamlit)
 ## 📊 Project Status
 
 🟢 Phase 1: CLI prototype (completed)  
-🟡 Phase 2: LLM integration (in progress)  
-⚪ Phase 3: RAG + UI system (planned)
+🟢 Phase 2: Modular workflow + Prompt system (completed)  
+🟡 Phase 3: Data persistence layer (next)  
+⚪ Phase 4: LLM integration (planned)  
+⚪ Phase 5: RAG + UI system (future)
 
 ---
 
@@ -57,7 +59,26 @@ This project demonstrates how simple Python constructs map to real AI applicatio
 
 ---
 
-## 💻 Current Implementation (Day 1)
+## 📈 System Evolution
+
+🟢 Day 1 — Initial Commit
+Built basic CLI workflow
+Practiced Python input/output
+Learned lists and dictionaries
+First GitHub repository setup
+
+🟢 Day 2 — Modular AI Workflow Architecture
+Refactored project into modular structure
+Introduced src/utils.py
+Introduced src/prompts.py
+
+System upgrade:
+
+main.py → execution layer
+utils.py → logic layer
+prompts.py → AI generation layer
+
+---
 
 ### User Interaction Layer
 
@@ -96,7 +117,7 @@ for key, value in person.items():
 ```bash
 python main.py
 ```
-## 📤 Example Interaction
+## 📤 Example Output
 
 ```text
 [INPUT]
@@ -114,10 +135,15 @@ System processed structured input and generated formatted output successfully.
 ## 📁 Project Structure
 
 ```text
-ai-creative-assistant/
+├── src/
+│   ├── utils.py
+│   ├── prompts.py
 │
-├── README.md
+├── data/
+│   └── .gitkeep
+│
 ├── main.py
+├── README.md
 ├── requirements.txt
 └── .gitignore
 ```
@@ -131,6 +157,18 @@ ai-creative-assistant/
 * Apply iteration patterns for data processing
 * Learn basic project organization with Git
 * Establish foundation for AI application architecture thinking
+
+---
+
+## 🧠 Prompt Template System (Day 2)
+
+The project now includes reusable prompt templates for:
+
+- Artist statement generation  
+- Exhibition introduction generation  
+- Proposal refinement  
+- Social media caption generation  
+- Translation workflows  
 
 ---
 
