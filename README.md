@@ -18,9 +18,9 @@ Python · CLI · Data Structures · (Future: OpenAI API · RAG · Streamlit)
 
 🟢 Phase 1: CLI prototype (completed)  
 🟢 Phase 2: Modular workflow + Prompt system (completed)  
-🟡 Phase 3: Data persistence layer (next)  
-⚪ Phase 4: LLM integration (planned)  
-⚪ Phase 5: RAG + UI system (future)
+🟢 Phase 3: Data persistence layer (completed)  
+🟡 Phase 4: LLM integration (next)  
+⚪ Phase 5: RAG + UI system (planned)
 
 ---
 
@@ -117,6 +117,8 @@ for key, value in person.items():
 ```bash
 python main.py
 ```
+---
+
 ## 📤 Example Output
 
 ```text
@@ -127,25 +129,28 @@ age: 25
 [OUTPUT]
 Hello Alice, you are 25 years old.
 
-System processed structured input and generated formatted output successfully.
-
-
+System processed structured input and generated formatted output successfully. 
+```
 ---
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
 ```text
+ai-creative-assistant/
+├── data/                    
+│   ├── log.json             
+│   ├── notes.txt           
+│   └── results.csv        
 ├── src/
-│   ├── utils.py
-│   ├── prompts.py
-│
-├── data/
-│   └── .gitkeep
-│
-├── main.py
+│   ├── prompts.py          
+│   ├── storage.py          
+│   ├── utils.py            
+├── .gitignore
+├── main.py                
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ---
