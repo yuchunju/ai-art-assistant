@@ -1,71 +1,32 @@
-# ===== Day 1: Basic I/O/Functions =====
+# 读取历史
+from src.storage import create_record, append_record, load_json
 from src.utils import greet_user
-from src.utils import average
-from src.utils import is_palindrome
 
-# test functions
-print(average([1, 2, 3, 4]))
-print(is_palindrome("level"))
+history = load_json("data/log.json")
 
-# user input
+# 让 AI “看历史”
+print("\n=== MEMORY CONTEXT ===")
+for item in history[-3:]:
+    print(item["input"], "→", item["output"])
+
+# 把历史“喂给当前输出逻辑”
 name = input("name: ")
 age = input("age: ")
 
-print(greet_user(name, age))
+# 用历史做一个简单增强
+if history:
+    last = history[-1]["output"]
+    print("\n(last memory):", last)
 
-# ===== Day 3: File Persistence =====
-# write to file
-with open("data/notes.txt", "w") as file:
-    file.write("AI workflow started.")
+output = greet_user(name, age)
 
-# read from file
-with open("data/notes.txt", "r") as file:
-    content = file.read()
+print(output)
 
-print("read content:", content)
+# 继续写入 memory（闭环）
+record = create_record(
+    input_text=name,
+    output_text=output,
+    type="cli-memory"
+)
 
-# CSV handling
-import csv
-
-rows = [
-    ["prompt", "output"],
-    ["artist statement", "generated successfully"]
-]
-
-with open("data/results.csv", "w", newline="") as file:
-    writer = csv.writer(file)
-    writer.writerows(rows)
-
-print("CSV saved.")
-
-# read CSV
-import csv
-
-with open("data/results.csv", "r") as file:
-    reader = csv.reader(file)
-
-    for row in reader:
-        print(row)
-
-# JSON handling
-import json
-
-data = {
-    "user": "Alice",
-    "prompt": "Generate artist statement",
-    "output": "Statement generated successfully"
-}
-
-with open("data/log.json", "w") as file:
-    json.dump(data, file, indent=4)
-
-print("JSON saved.")
-
-# read JSON
-import json
-
-with open("data/log.json", "r") as file:
-    content = json.load(file)
-
-print(content)
-print(content["prompt"])
+append_record("data/log.json", record)

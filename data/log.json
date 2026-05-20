@@ -1,5 +1,26 @@
-{
-    "user": "Alice",
-    "prompt": "Generate artist statement",
-    "output": "Statement generated successfully"
-}
+[
+    {
+        "timestamp": "...",
+        "input": "...",
+        "output": "...",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T20:05:52.071676",
+        "input": "Alice",
+        "output": "Hello Alice, you are 25 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T20:14:18.004149",
+        "input": "Juju",
+        "output": "Hello Juju, you are 28 years old.",
+        "type": "cli-memory"
+    },
+    {
+        "timestamp": "2026-05-20T20:14:44.204248",
+        "input": "JT",
+        "output": "Hello JT, you are 21 years old.",
+        "type": "cli-memory"
+    }
+]
