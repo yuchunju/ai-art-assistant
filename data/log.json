@@ -1,38 +1,62 @@
 [
     {
-        "timestamp": "...",
-        "input": "...",
-        "output": "...",
-        "type": "cli"
-    },
-    {
-        "timestamp": "2026-05-20T20:05:52.071676",
-        "input": "Alice",
-        "output": "Hello Alice, you are 25 years old.",
-        "type": "cli"
-    },
-    {
-        "timestamp": "2026-05-20T20:14:18.004149",
+        "timestamp": "2026-05-20T21:03:45.390044",
         "input": "Juju",
         "output": "Hello Juju, you are 28 years old.",
-        "type": "cli-memory"
-    },
-    {
-        "timestamp": "2026-05-20T20:14:44.204248",
-        "input": "JT",
-        "output": "Hello JT, you are 21 years old.",
-        "type": "cli-memory"
-    },
-    {
-        "timestamp": "2026-05-20T20:29:30.917924",
-        "input": "Alice",
-        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.')",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T20:29:55.698428",
+        "timestamp": "2026-05-20T21:04:22.518649",
         "input": "Juju",
-        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.')')",
+        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:04:58.976796",
+        "input": "Juju",
+        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:06:11.432994",
+        "input": "Juju",
+        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:07:39.239433",
+        "input": "Juju",
+        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:15:02.445080",
+        "input": "JT",
+        "output": "Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:19:53.658288",
+        "input": "Alice",
+        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:24:56.667852",
+        "input": "Alice",
+        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:29:04.986453",
+        "input": "Alice",
+        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-20T21:35:34.377520",
+        "input": "TT",
+        "output": "Hello TT, you are 18 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')')')')",
         "type": "cli"
     }
 ]
