@@ -1,32 +1,17 @@
-# 读取历史
-from src.storage import create_record, append_record, load_json
-from src.utils import greet_user
+from src.storage import create_record, append_record, load_history
+from src.utils import answer_with_memory
 
-history = load_json("data/log.json")
-
-# 让 AI “看历史”
-print("\n=== MEMORY CONTEXT ===")
-for item in history[-3:]:
-    print(item["input"], "→", item["output"])
-
-# 把历史“喂给当前输出逻辑”
 name = input("name: ")
 age = input("age: ")
 
-# 用历史做一个简单增强
-if history:
-    last = history[-1]["output"]
-    print("\n(last memory):", last)
+# 1. 读取历史
+history = load_history("data/log.json")
 
-output = greet_user(name, age)
+# 2. 生成回答（带 memory）
+output = answer_with_memory(name, age, history)
 
 print(output)
 
-# 继续写入 memory（闭环）
-record = create_record(
-    input_text=name,
-    output_text=output,
-    type="cli-memory"
-)
-
+# 3. 写入新记录
+record = create_record(name, output, type="cli")
 append_record("data/log.json", record)

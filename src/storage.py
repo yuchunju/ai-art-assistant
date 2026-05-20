@@ -1,7 +1,7 @@
-from datetime import datetime
 import json
+from datetime import datetime
 
-# 定义“记录结构生成函数”
+# ===== 创建统一结构 =====
 def create_record(input_text, output_text, type="cli"):
     return {
         "timestamp": datetime.now().isoformat(),
@@ -10,23 +10,26 @@ def create_record(input_text, output_text, type="cli"):
         "type": type
     }
 
-# JSON读取
-def load_json(path):
+
+# ===== 写入 JSON（追加 memory）=====
+def append_record(path, record):
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except:
+        data = []
+
+    data.append(record)
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+
+
+# ===== 读取全部历史 =====
+def load_history(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     except:
         return []
-    
-# JSON写入
-def save_json(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
-
-# 追加记录到JSON文件
-def append_record(path, record):
-    data = load_json(path)
-    data.append(record)
-    save_json(path, data)    
-
-    
