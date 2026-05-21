@@ -1,21 +1,17 @@
-def greet_user(name, age):
-    return f"Hello {name}, you are {age} years old."
-
-
-def average(nums):
-    return sum(nums) / len(nums)
-
-
-def is_palindrome(text):
-    return text == text[::-1]
-
 def answer_with_memory(name, age, history):
-    if len(history) == 0:
-        return f"Hello {name}, you are {age} years old."
+    base = f"Hello {name}, you are {age} years old."
+
+    if not history:
+        return base
 
     last = history[-1]
 
+    # ❗关键：防止递归嵌套 memory
+    last_input = last.get("input", "")
+    last_output = last.get("output", "")
+
+    # ❗只截断，不允许继续拼 memory
     return (
-        f"Hello {name}, you are {age} years old.\n"
-        f"(Memory: last input was '{last['input']}', last output was '{last['output']}')"
+        base + "\n"
+        + f"(Memory: last input was '{last_input}', last output was '{last_output}')"
     )

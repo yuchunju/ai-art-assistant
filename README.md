@@ -10,7 +10,7 @@ A Python-based learning project evolving toward an AI application development wo
 
 ## 🛠 Tech Stack
 
-Python · CLI · Data Structures · (Future: OpenAI API · RAG · Streamlit)
+Python · CLI · JSON · API Integration · Data Persistence · (Future: OpenAI API · RAG · Streamlit)
 
 ---
 
@@ -19,8 +19,9 @@ Python · CLI · Data Structures · (Future: OpenAI API · RAG · Streamlit)
 🟢 Phase 1: CLI prototype (completed)  
 🟢 Phase 2: Modular workflow + Prompt system (completed)  
 🟢 Phase 3: AI Memory System + Data Persistence Layer (completed)  
-🟡 Phase 4: LLM integration (next)  
-⚪ Phase 5: RAG + UI system (planned)
+🟢 Phase 4: API Integration + Fault-Tolerant Pipeline (completed)
+🟡 Phase 5: LLM integration (next)
+⚪ Phase 6: RAG + UI system (planned)
 
 ---
 
@@ -40,9 +41,10 @@ This project explores how basic Python programming can be structured into an AI 
 This CLI-based tool simulates a minimal AI generation pipeline:
 
 1. User inputs structured data (text / metadata)
-2. System processes input → generates response → stores memory → logs data
-3. Output is formatted as structured response
-4. Future versions will connect to LLMs for generation
+2. System processes input → calls external API → injects memory context
+3. Structured output is generated and stored persistently
+4. System logs runtime data into JSON + CSV pipelines
+5. Fault-tolerant retry logic prevents runtime crashes
 
 
 ---
@@ -62,12 +64,15 @@ This project demonstrates how simple Python constructs map to real AI applicatio
 ## 📈 System Evolution
 
 🟢 Day 1 — Initial Commit
+
 Built basic CLI workflow
 Practiced Python input/output
 Learned lists and dictionaries
 First GitHub repository setup
 
+
 🟢 Day 2 — Modular AI Workflow Architecture
+
 Refactored project into modular structure
 Introduced src/utils.py
 Introduced src/prompts.py
@@ -78,7 +83,9 @@ main.py → execution layer
 utils.py → logic layer
 prompts.py → AI generation layer
 
+
 🟢 Day 3 — AI Memory + Data Persistence System
+
 Built persistent AI memory system using JSON + CSV
 Implemented structured logging pipeline
 Enabled multi-turn contextual responses
@@ -89,6 +96,21 @@ System upgrade:
 storage.py → memory engine (JSON persistence)
 csv_logger.py → logging engine (CSV analytics)
 main.py → full AI pipeline orchestration
+
+
+🟢 Day 4 — API Integration + Fault-Tolerant Pipeline
+
+Integrated external API communication layer  
+Implemented JSON response parsing  
+Added retry mechanism and graceful fallback handling  
+Built fault-tolerant AI processing pipeline  
+
+System upgrade:
+
+api.py → external API communication layer  
+main.py → runtime orchestration + API pipeline  
+memory system → contextual runtime injection  
+
 
 ---
 
@@ -135,12 +157,14 @@ python main.py
 
 ```text
 [INPUT]
-name: Alice
-age: 25
+name: Juju
+
+[API]
+{'name': 'Juju', 'age': 57, 'count': 1}
 
 [OUTPUT]
-Hello Alice, you are 25 years old.
-(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.')
+Hello Juju, you are 57 years old.
+(Memory: last input was 'Alice', last output was 'Hello Alice, you are 31 years old.')
 ```
 ---
 
@@ -148,19 +172,22 @@ Hello Alice, you are 25 years old.
 
 ```text
 ai-creative-assistant/
-├── data/                    
-│   ├── log.json             
-│   ├── notes.txt           
-│   └── results.csv        
+├── data/
+│   ├── log.json
+│   ├── results.csv
+│   ├── notes.txt
+│   └── error.log
 
 ├── src/
+│   ├── api.py
 │   ├── prompts.py
 │   ├── storage.py
 │   ├── csv_logger.py
-│   └── utils.py            
+│   ├── logger.py
+│   └── utils.py
 
 ├── .gitignore
-├── main.py                
+├── main.py
 ├── README.md
 └── requirements.txt
 ```
@@ -176,6 +203,11 @@ ai-creative-assistant/
 * Establish foundation for AI application architecture thinking
 * Build persistent AI memory systems with JSON
 * Design structured logging pipelines for AI applications
+* Integrate external APIs into Python applications
+* Handle API failures with retry mechanisms
+* Design fault-tolerant runtime pipelines
+* Process structured JSON responses
+* Simulate AI application orchestration workflows
 
 ---
 
@@ -200,6 +232,10 @@ This project acts as a bridge between basic programming and AI systems:
 * Loop logic → Batch inference / dataset processing
 * Scripts → AI automation tools
 * AI memory system → persistent context + multi-turn reasoning capability
+* API layer → external model/service communication
+* Retry system → fault-tolerant AI infrastructure
+* JSON persistence → conversational memory storage
+* Runtime orchestration → AI application control flow
 
 ---
 

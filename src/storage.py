@@ -26,8 +26,8 @@ def append_record(record, path=DATA_PATH):
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
-    except:
-        data = []
+    except (FileNotFoundError, json.JSONDecodeError):
+            data = []
 
     data.append(record)
 

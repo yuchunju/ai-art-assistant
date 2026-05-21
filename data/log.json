@@ -1,62 +1,302 @@
 [
     {
-        "timestamp": "2026-05-20T21:03:45.390044",
-        "input": "Juju",
-        "output": "Hello Juju, you are 28 years old.",
+        "timestamp": "2026-05-21T15:04:24.446492",
+        "input": "Alice",
+        "output": "Hello Alice, you are 25 years old.",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:04:22.518649",
-        "input": "Juju",
-        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')",
+        "timestamp": "2026-05-21T15:07:58.702791",
+        "input": "Alice",
+        "output": "Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')",
+        "type": "api_cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:19:13.560828",
+        "input": "Alice",
+        "output": "Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:04:58.976796",
-        "input": "Juju",
-        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')",
+        "timestamp": "2026-05-21T15:20:42.941691",
+        "input": "Alice",
+        "output": "Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:06:11.432994",
-        "input": "Juju",
-        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')",
+        "timestamp": "2026-05-21T15:36:47.653083",
+        "input": "Alice",
+        "output": "Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:07:39.239433",
+        "timestamp": "2026-05-21T15:37:16.947659",
         "input": "Juju",
-        "output": "Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')",
+        "output": "Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:15:02.445080",
+        "timestamp": "2026-05-21T15:37:30.017197",
         "input": "JT",
-        "output": "Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')",
+        "output": "Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:19:53.658288",
+        "timestamp": "2026-05-21T15:37:40.420282",
+        "input": "Hua",
+        "output": "Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:37:49.179027",
+        "input": "Annabella",
+        "output": "Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:37:59.517955",
+        "input": "Cassie",
+        "output": "Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:38:06.100794",
+        "input": "Anna",
+        "output": "Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:38:16.364823",
+        "input": "Lover",
+        "output": "Hello Lover, you are 23 years old.\n(Memory: last input was 'Anna', last output was 'Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:38:23.289353",
+        "input": "Cherry",
+        "output": "Hello Cherry, you are 39 years old.\n(Memory: last input was 'Lover', last output was 'Hello Lover, you are 23 years old.\n(Memory: last input was 'Anna', last output was 'Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:38:32.009504",
+        "input": "same",
+        "output": "Hello same, you are 20 years old.\n(Memory: last input was 'Cherry', last output was 'Hello Cherry, you are 39 years old.\n(Memory: last input was 'Lover', last output was 'Hello Lover, you are 23 years old.\n(Memory: last input was 'Anna', last output was 'Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:38:40.394075",
+        "input": "Lana",
+        "output": "Hello Lana, you are 32 years old.\n(Memory: last input was 'same', last output was 'Hello same, you are 20 years old.\n(Memory: last input was 'Cherry', last output was 'Hello Cherry, you are 39 years old.\n(Memory: last input was 'Lover', last output was 'Hello Lover, you are 23 years old.\n(Memory: last input was 'Anna', last output was 'Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:38:57.587126",
+        "input": "Juju",
+        "output": "Hello Juju, you are 54 years old.\n(Memory: last input was 'Lana', last output was 'Hello Lana, you are 32 years old.\n(Memory: last input was 'same', last output was 'Hello same, you are 20 years old.\n(Memory: last input was 'Cherry', last output was 'Hello Cherry, you are 39 years old.\n(Memory: last input was 'Lover', last output was 'Hello Lover, you are 23 years old.\n(Memory: last input was 'Anna', last output was 'Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:39:39.500859",
+        "input": "Juju",
+        "output": "Hello Juju, you are 30 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 54 years old.\n(Memory: last input was 'Lana', last output was 'Hello Lana, you are 32 years old.\n(Memory: last input was 'same', last output was 'Hello same, you are 20 years old.\n(Memory: last input was 'Cherry', last output was 'Hello Cherry, you are 39 years old.\n(Memory: last input was 'Lover', last output was 'Hello Lover, you are 23 years old.\n(Memory: last input was 'Anna', last output was 'Hello Anna, you are 43 years old.\n(Memory: last input was 'Cassie', last output was 'Hello Cassie, you are 49 years old.\n(Memory: last input was 'Annabella', last output was 'Hello Annabella, you are 30 years old.\n(Memory: last input was 'Hua', last output was 'Hello Hua, you are 59 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 57 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 39 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 48 years old.\n(Memory: last input was '& C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py', last output was 'Hello & C:/Users/cherr/AppData/Local/Programs/Python/Python313/python.exe d:/学习/AI/ai-creative-assistant/main.py, you are 0 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 58 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.')')')')')')')')')')')')')')')')')",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:43:32.246261",
         "input": "Alice",
-        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')",
+        "output": "Hello Alice, you are 0 years old.",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:24:56.667852",
-        "input": "Alice",
-        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')')",
+        "timestamp": "2026-05-21T15:44:37.037764",
+        "input": "Alicwe",
+        "output": "Hello Alicwe, you are 31 years old.",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:29:04.986453",
-        "input": "Alice",
-        "output": "Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')')')",
+        "timestamp": "2026-05-21T15:44:50.396448",
+        "input": "Juju",
+        "output": "Hello Juju, you are 57 years old.",
         "type": "cli"
     },
     {
-        "timestamp": "2026-05-20T21:35:34.377520",
-        "input": "TT",
-        "output": "Hello TT, you are 18 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'Alice', last output was 'Hello Alice, you are 25 years old.\n(Memory: last input was 'JT', last output was 'Hello JT, you are 21 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.\n(Memory: last input was 'Juju', last output was 'Hello Juju, you are 28 years old.')')')')')')')')')",
+        "timestamp": "2026-05-21T15:48:44.149892",
+        "input": "Sam",
+        "output": "Hello Sam, you are 59 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:48:57.262057",
+        "input": "Jake",
+        "output": "Hello Jake, you are 46 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:49:07.820262",
+        "input": "Alex",
+        "output": "Hello Alex, you are 45 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:49:15.331075",
+        "input": "Ben",
+        "output": "Hello Ben, you are 0 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:49:23.497843",
+        "input": "Justin",
+        "output": "Hello Justin, you are 22 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:49:31.456071",
+        "input": "Long",
+        "output": "Hello Long, you are 31 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:49:45.779748",
+        "input": "Zhao",
+        "output": "Hello Zhao, you are 41 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:49:58.452944",
+        "input": "Dick",
+        "output": "Hello Dick, you are 42 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:50:07.312408",
+        "input": "Muchma",
+        "output": "Hello Muchma, you are 28 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:51:12.288455",
+        "input": "Liam",
+        "output": "Hello Liam, you are 0 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:51:18.128565",
+        "input": "Oliver",
+        "output": "Hello Oliver, you are 37 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:51:28.618836",
+        "input": "Noah",
+        "output": "Hello Noah, you are 31 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:51:37.940539",
+        "input": "Mateo",
+        "output": "Hello Mateo, you are 28 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:51:51.379213",
+        "input": "Theodore",
+        "output": "Hello Theodore, you are 34 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:52:08.005433",
+        "input": "Elijah",
+        "output": "Hello Elijah, you are 24 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:52:36.298096",
+        "input": "John",
+        "output": "Hello John, you are 26 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:52:48.244736",
+        "input": "William",
+        "output": "Hello William, you are 44 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:52:57.178091",
+        "input": "James",
+        "output": "Hello James, you are 48 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:53:09.490822",
+        "input": "Henry",
+        "output": "Hello Henry, you are 29 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:53:18.575988",
+        "input": "Benjamin",
+        "output": "Hello Benjamin, you are 51 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:53:36.122529",
+        "input": "Samuel",
+        "output": "Hello Samuel, you are 27 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:53:43.018771",
+        "input": "Thomas",
+        "output": "Hello Thomas, you are 38 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:53:52.034459",
+        "input": "Daniel",
+        "output": "Hello Daniel, you are 29 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:54:02.215658",
+        "input": "Amber",
+        "output": "Hello Amber, you are 28 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:54:08.093033",
+        "input": "Ambra",
+        "output": "Hello Ambra, you are 38 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:54:29.528271",
+        "input": "Kylo",
+        "output": "Hello Kylo, you are 54 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:54:37.255779",
+        "input": "Khai",
+        "output": "Hello Khai, you are 48 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T15:54:49.910658",
+        "input": "Felix",
+        "output": "Hello Felix, you are 31 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T16:06:33.452167",
+        "input": "Kyle",
+        "output": "Hello Kyle, you are 38 years old.",
+        "type": "cli"
+    },
+    {
+        "timestamp": "2026-05-21T16:07:33.277289",
+        "input": "Mateao",
+        "output": "Hello Mateao, you are 36 years old.",
         "type": "cli"
     }
 ]
