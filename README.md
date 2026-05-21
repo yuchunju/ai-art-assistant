@@ -10,7 +10,9 @@ A Python-based learning project evolving toward an AI application development wo
 
 ## 🛠 Tech Stack
 
-Python · CLI · JSON · API Integration · Data Persistence · (Future: OpenAI API · RAG · Streamlit)
+Python · CLI · JSON · OpenAI SDK · SiliconFlow API ·
+LLM Integration · Prompt Routing · Data Persistence ·
+(Future: RAG · Streamlit)
 
 ---
 
@@ -19,9 +21,10 @@ Python · CLI · JSON · API Integration · Data Persistence · (Future: OpenAI 
 🟢 Phase 1: CLI prototype (completed)  
 🟢 Phase 2: Modular workflow + Prompt system (completed)  
 🟢 Phase 3: AI Memory System + Data Persistence Layer (completed)  
-🟢 Phase 4: API Integration + Fault-Tolerant Pipeline (completed)
-🟡 Phase 5: LLM integration (next)
-⚪ Phase 6: RAG + UI system (planned)
+🟢 Phase 4: API Integration + Fault-Tolerant Pipeline (completed)  
+🟢 Phase 5: LLM Integration + AI Text Assistant (completed)  
+🟡 Phase 6: RAG + Retrieval System (next)  
+⚪ Phase 7: Streamlit UI + Agent Workflows (planned)
 
 ---
 
@@ -38,13 +41,14 @@ This project explores how basic Python programming can be structured into an AI 
 
 ## 🧪 What This Tool Does (Core Workflow)
 
-This CLI-based tool simulates a minimal AI generation pipeline:
+This project now functions as a modular AI text assistant system:
 
-1. User inputs structured data (text / metadata)
-2. System processes input → calls external API → injects memory context
-3. Structured output is generated and stored persistently
-4. System logs runtime data into JSON + CSV pipelines
-5. Fault-tolerant retry logic prevents runtime crashes
+1. User selects a creative writing task
+2. System routes request through prompt templates
+3. GPT model generates structured creative output
+4. Outputs are persisted into JSON + CSV memory systems
+5. Runtime logs and retry mechanisms improve stability
+6. Modular architecture supports future RAG and agent expansion
 
 
 ---
@@ -112,6 +116,19 @@ main.py → runtime orchestration + API pipeline
 memory system → contextual runtime injection  
 
 
+🟢 Day 5 — LLM Integration + AI Text Assistant
+
+Integrated GPT-based text generation using SiliconFlow API  
+Built multi-task prompt routing system  
+Implemented reusable prompt registry architecture  
+Added AI generation persistence into JSON + CSV pipelines  
+Designed modular AI text assistant workflow  
+
+System upgrade:
+
+gpt.py → LLM inference layer  
+prompts.py → prompt registry system  
+main.py → multi-task AI orchestration engine
 ---
 
 ### User Interaction Layer
@@ -156,16 +173,26 @@ python main.py
 ## 📤 Example Output
 
 ```text
-[INPUT]
-name: Juju
+Choose task:
 
-[API]
-{'name': 'Juju', 'age': 57, 'count': 1}
+1. statement
+2. exhibition
+3. caption
+4. proposal
+5. translation
+6. keywords
 
-[OUTPUT]
-Hello Juju, you are 57 years old.
-(Memory: last input was 'Alice', last output was 'Hello Alice, you are 31 years old.')
-```
+Select task: 1
+
+Describe your art project:
+
+Plastic waste archive and AI memory systems
+
+=== GENERATED TEXT ===
+
+My work explores the intersection between discarded material,
+digital memory, and algorithmic systems...
+
 ---
 
 ## 📁 Project Structure
@@ -177,15 +204,16 @@ ai-creative-assistant/
 │   ├── results.csv
 │   ├── notes.txt
 │   └── error.log
-
+│
 ├── src/
 │   ├── api.py
+│   ├── gpt.py
 │   ├── prompts.py
 │   ├── storage.py
 │   ├── csv_logger.py
 │   ├── logger.py
 │   └── utils.py
-
+│
 ├── .gitignore
 ├── main.py
 ├── README.md
@@ -236,6 +264,9 @@ This project acts as a bridge between basic programming and AI systems:
 * Retry system → fault-tolerant AI infrastructure
 * JSON persistence → conversational memory storage
 * Runtime orchestration → AI application control flow
+* Prompt registry → modular prompt routing architecture
+* GPT inference layer → LLM orchestration pipeline
+* Multi-task routing → AI assistant workflow control
 
 ---
 
@@ -243,24 +274,27 @@ This project acts as a bridge between basic programming and AI systems:
 
 Planned evolution of this project:
 
-* Modular functions (code organization)
-* API integration (OpenAI / external AI services)
-* Prompt template system
-* JSON-based data pipeline
-* AI-assisted content generation system
-* Streamlit UI for interaction
+* Retrieval-Augmented Generation (RAG)
+* Embedding-based memory search
+* Vector database integration
+* Streamlit interaction UI
+* Autonomous agent workflows
+* Multi-step reasoning pipelines
+* Tool-using AI assistants
 
 ---
 
 ## 📌 Long-Term Goal
 
-To evolve this repository into a minimal but functional AI application framework capable of:
+To evolve this repository into a modular AI creative assistant platform capable of:
 
-* Generating structured creative outputs
-* Processing user inputs via LLM APIs
-* Serving as a lightweight AI assistant prototype
+* LLM-powered creative writing
+* Persistent conversational memory
+* Retrieval-based contextual generation
+* Multi-agent creative workflows
+* Structured artistic and curatorial content generation
 
-This project will evolve into a modular AI creative assistant for generating structured artistic and curatorial content.
+The project aims to bridge contemporary creative practice with practical AI application engineering.
 
 ---
 

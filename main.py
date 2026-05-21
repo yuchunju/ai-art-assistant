@@ -1,60 +1,91 @@
-from src.storage import create_record, append_record, load_history
+from src.storage import create_record, append_record
 from src.csv_logger import append_csv
-from src.utils import answer_with_memory
-from src.api import predict_age
+from src.gpt import generate_text
+from src.prompts import PROMPTS
 
 import os
 
 print("CWD:", os.getcwd())
 
 # =========================
-# 1. 输入
+# 1. Task Selection
 # =========================
-name = input("name: ")
+print("""
+
+Choose task:
+
+1. statement
+2. exhibition
+3. caption
+4. proposal
+5. translation
+6. keywords
+
+""")
+
+task = input("Select task: ").strip()
 
 # =========================
-# 2. API（带异常处理）
+# 2. Task Router
 # =========================
-result = predict_age(name)
+task_map = {
+    "1": "statement",
+    "2": "exhibition",
+    "3": "caption",
+    "4": "proposal",
+    "5": "translation",
+    "6": "keywords"
+}
 
-print("API result:", result)
+task_type = task_map.get(task)
 
-age = result.get("age", 0)
-
-# =========================
-# 3. 读取 memory
-# =========================
-history = load_history()[-10:]
+if not task_type:
+    print("Invalid task.")
+    exit()
 
 # =========================
-# 4. 生成输出
+# 3. User Input
 # =========================
-output = answer_with_memory(name, age, history)
+description = input("\nDescribe your art project:\n")
+
+# =========================
+# 4. Prompt Template
+# =========================
+prompt = PROMPTS[task_type].format(
+    description=description
+)
+
+# =========================
+# 5. GPT Generation
+# =========================
+output = generate_text(prompt)
+
+print("\n=== GENERATED TEXT ===\n")
 
 print(output)
 
 # =========================
-# 5. 保存干净 output（关键）
+# 6. Save Memory
 # =========================
-clean_output = output.split("\n")[0]
-
 record = create_record(
-    input_text=name,
-    output_text=clean_output,
-    type="cli"
+    input_text=description,
+    output_text=output,
+    type=task_type
 )
 
 append_record(record)
 
-print("DEBUG: writing JSON...")
+print("\nDEBUG: writing JSON...")
 
 # =========================
-# 6. 写 CSV
+# 7. CSV Logging
 # =========================
+clean_output = output.replace("\n", " ")[:200]
+
 append_csv(
     "data/results.csv",
-    row=[name, age, clean_output],
-    header=["name", "age", "output"]
+    row=[task_type, description, clean_output],
+    header=["task", "input", "output"]
 )
 
 print("DEBUG: writing CSV...")
