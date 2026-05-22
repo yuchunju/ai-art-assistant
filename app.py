@@ -6,7 +6,7 @@ from src.gpt import generate_text
 # =========================
 # Page
 # =========================
-st.title("AI Art Archive Assistant")
+st.title("AI Creative Assistant")
 
 # =========================
 # Session state (避免重复逻辑)
