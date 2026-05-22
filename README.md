@@ -1,5 +1,12 @@
 # AI Creative Assistant
 
+## 🎥 Demo
+## 🎥 Demo
+
+https://github.com/user-attachments/assets/demo-placeholder
+
+---
+
 A modular AI system prototype for structured creative generation, retrieval-augmented reasoning, and AI-assisted artistic workflows.
 
 ---
@@ -76,7 +83,7 @@ It connects computational logic with contemporary artistic production.
 
 ```text
 ai-creative-assistant/
-├── chroma_db/
+├── assets/
 ├── data/
 │   ├── uploads/
 │   ├── .gitkeep
