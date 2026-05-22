@@ -1,9 +1,8 @@
 # AI Creative Assistant
 
 ## 🎥 Demo
-## 🎥 Demo
 
-https://github.com/user-attachments/assets/demo-placeholder
+[demo1.webm](https://github.com/user-attachments/assets/d99227be-9808-4aa6-93ef-28daf8dbfa09)
 
 ---
 
